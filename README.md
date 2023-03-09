@@ -1,3 +1,7 @@
+![GitHub](https://img.shields.io/github/license/Redrrx/WikimediaScrap?style=flat-square)
+![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Redrrx/WikimediaScrap?style=flat-square)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Redrrx/WikimediaScrap)
+
 # WikimediaScrap 
 This is a Python script that can be used to scrape images from Wikimedia Commons using a keyword. It was created for educational purposes and can be used as a starting point for building similar scraping projects.
 
