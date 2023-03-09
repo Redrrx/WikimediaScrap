@@ -29,7 +29,7 @@ async def download_image(url, headers, keyword):
     req = functools.partial(requests.get, headers=headers)
     response = await asyncio.get_event_loop().run_in_executor(None, req, url)
     if response.status_code == 200:
-        with open(os.path.join(f'/images/{keyword}', f'{str(uuid.uuid4())}.jpg'), 'wb') as f:
+        with open(os.path.join(os.getcwd(), f"images/{keyword}", f'{str(uuid.uuid4())}.jpg'), 'wb') as f:
             f.write(response.content)
             print(colored(f'[!] Successfully downloaded and saved {url}', 'green'))
     else:
